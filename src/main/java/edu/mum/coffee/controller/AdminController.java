@@ -37,8 +37,7 @@ public class AdminController {
 	@RequestMapping(value="/createProduct", method=RequestMethod.POST)
 	public String createProductPOST(@Valid @ModelAttribute("product") Product product, 
 									BindingResult result) {
-		System.out.println("-----Post method Reached------");
-		
+				
 		if(result.hasErrors()) {
 			return "redirect:/createProduct";
 		}
@@ -68,8 +67,7 @@ public class AdminController {
 	
 	@RequestMapping(value="/product/{productId}", method=RequestMethod.POST)
 	public String update(Product product, @PathVariable int productId, Model model) {
-		System.out.println(">>>>This is the price "+product.getPrice());
-		
+				
 		Product p = productService.getProduct(productId);
 		p.setProductName(product.getProductName());
 		p.setPrice(product.getPrice());
@@ -81,8 +79,6 @@ public class AdminController {
 		
 		return "listProduct";
 		
-//		carDao.update(id, car); // car.id already set by binding
-//		return "redirect:/cars";
 	}
 	
 	@RequestMapping(value="/product/delete", method=RequestMethod.POST)
@@ -93,31 +89,6 @@ public class AdminController {
 		productService.delete(p);
 		
 		return "redirect:/listProduct";
-	}
-	////**********************Person**************************
-	@RequestMapping(value="/createPerson")
-	public String createPersonGet(Model model) {
-		Person person = new Person();
-		model.addAttribute("person", person);
-		return "createPerson";
-	}
-	
-	@RequestMapping(value="/createPerson", method=RequestMethod.POST)
-	public String createPersonPOST(@Valid @ModelAttribute("person") Person person, 
-									BindingResult result) {
-		System.out.println("-----Post method Reached------");
-		
-		if(result.hasErrors()) {
-			return "redirect:/createPerson";
-		}
-		else {
-			/*System.out.println("Person Added");
-			System.out.println(product.getProductType());*/
-			
-			personService.savePerson(person);
-			
-			return "personConfirmation";
-		}
 	}
 	
 }
