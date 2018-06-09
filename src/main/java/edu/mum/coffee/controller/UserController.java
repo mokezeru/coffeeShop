@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package edu.mum.coffee.controller;
 
 import java.util.ArrayList;
@@ -74,10 +74,4 @@ public class UserController {
 	}
 
 }
-=======
-package edu.mum.coffee.controller;
 
-public class UserController {
-
-}
->>>>>>> c74f1331a98d3473b47de3ec1d94ee87d1b4d4ae

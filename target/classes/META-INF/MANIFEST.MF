@@ -1,15 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: coffeeShop
 Implementation-Version: 1.5.3.RELEASE
-<<<<<<< HEAD
-Built-By: berek
-Implementation-Vendor-Id: edu.mum
-Build-Jdk: 1.8.0_171
-=======
 Built-By: hp
 Implementation-Vendor-Id: edu.mum
 Build-Jdk: 1.8.0_172
->>>>>>> c74f1331a98d3473b47de3ec1d94ee87d1b4d4ae
 Implementation-URL: http://projects.spring.io/spring-boot/coffeeShop/
 Created-By: Maven Integration for Eclipse
 Implementation-Vendor: Pivotal Software, Inc.

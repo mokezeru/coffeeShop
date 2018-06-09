@@ -37,12 +37,8 @@ public class AdminController {
 	@RequestMapping(value="/createProduct", method=RequestMethod.POST)
 	public String createProductPOST(@Valid @ModelAttribute("product") Product product, 
 									BindingResult result) {
-<<<<<<< HEAD
 		System.out.println("-----Post method Reached------");
 		
-=======
-				
->>>>>>> c74f1331a98d3473b47de3ec1d94ee87d1b4d4ae
 		if(result.hasErrors()) {
 			return "redirect:/createProduct";
 		}
@@ -72,12 +68,9 @@ public class AdminController {
 	
 	@RequestMapping(value="/product/{productId}", method=RequestMethod.POST)
 	public String update(Product product, @PathVariable int productId, Model model) {
-<<<<<<< HEAD
+
 		System.out.println(">>>>This is the price "+product.getPrice());
-		
-=======
-				
->>>>>>> c74f1331a98d3473b47de3ec1d94ee87d1b4d4ae
+
 		Product p = productService.getProduct(productId);
 		p.setProductName(product.getProductName());
 		p.setPrice(product.getPrice());
@@ -89,11 +82,6 @@ public class AdminController {
 		
 		return "listProduct";
 		
-<<<<<<< HEAD
-//		carDao.update(id, car); // car.id already set by binding
-//		return "redirect:/cars";
-=======
->>>>>>> c74f1331a98d3473b47de3ec1d94ee87d1b4d4ae
 	}
 	
 	@RequestMapping(value="/product/delete", method=RequestMethod.POST)
@@ -105,7 +93,7 @@ public class AdminController {
 		
 		return "redirect:/listProduct";
 	}
-<<<<<<< HEAD
+
 	////**********************Person**************************
 	@RequestMapping(value="/createPerson")
 	public String createPersonGet(Model model) {
@@ -131,7 +119,6 @@ public class AdminController {
 			return "personConfirmation";
 		}
 	}
-=======
->>>>>>> c74f1331a98d3473b47de3ec1d94ee87d1b4d4ae
+
 	
 }

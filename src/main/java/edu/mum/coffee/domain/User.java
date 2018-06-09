@@ -10,22 +10,11 @@ public class User {
 	@Id
 	@GeneratedValue
 	private int id;
-<<<<<<< HEAD
 	private String username;
 	private String password;
 	private String role;
 	
-	public User() {
-		
-	}
-
-	public User(String username, String password, String role) {
-		
-		this.username = username;
-		this.password = password;
-		this.role = role;
-	}
-
+	
 	public User(User user) {
 		this.username = user.username;
 		this.password = user.password;
@@ -61,10 +50,5 @@ public class User {
 		this.role = role;
 	}
 	
-=======
-	private int username;
-	private int password;
-	private int role;
->>>>>>> c74f1331a98d3473b47de3ec1d94ee87d1b4d4ae
 
 }
