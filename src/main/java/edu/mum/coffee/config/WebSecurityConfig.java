@@ -18,7 +18,7 @@ import edu.mum.coffee.repository.UserRepository;
 import edu.mum.coffee.service.MyUserDetailService;
 
 @Configuration
-@EnableWebSecurity
+//@EnableWebSecurity
 @EnableJpaRepositories(basePackageClasses = UserRepository.class)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
@@ -33,7 +33,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http
             .authorizeRequests()
-                .antMatchers("/", "/home", "/index").permitAll()
+                .antMatchers("/", "/home", "/api/**","/index").permitAll()
                 .anyRequest().authenticated()
                 .and()
             .formLogin()

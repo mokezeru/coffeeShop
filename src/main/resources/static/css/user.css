@@ -1,0 +1,61 @@
+ #welcome{	
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+ }
+ .welcome{
+	border-style: solid;
+    border-color: #8080c0;
+    border-width: 4px;
+    border-radius: 20px;
+    margin: auto;
+    overflow: auto;
+    background-color: gray;
+ }
+ h2{	
+    font-size: 18pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+ }
+ 
+ /* unvisited link */
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: hotpink;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+a{
+ 	font-size: 18pt;
+ }
+ #logout{
+ 	height: 40px;
+  	text-align: right;
+  	background-color: #400000;
+  	margin:0px;
+  }
+  legend{
+  	color:#3B2F2F;
+  	font-weight:bold;
+  	font-size:24px;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+  }

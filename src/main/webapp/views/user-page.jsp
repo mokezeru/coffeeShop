@@ -6,13 +6,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Welcome Page</title>
+<link href="css/user.css" rel="stylesheet" />
 </head>
 <body>
-<h3>User Welcome ${person.firstName}</h3>
-<a href="<c:url value="/logout" />"> Now logout </a>
+<div class="welcome">
+		<h2 id="welcome">User Welcome ${person.firstName}</h2> 	
+	</div>
+	<p id="logout">
+		<a href="<c:url value="/logout" />"> Logout </a>
+	<p>
 <hr/>
-<h3><a href="updateprofile" >Update Profile</a></h3>
-<h3><a href="placeOrder" >Place Order</a></h3>
+<div>
+	<fieldset>
+      <legend id="legend1">User Activity</legend>
+      	<ul>
+			<li><a href="updateprofile">Update Profile</a> </li>
+			<li><a href="placeOrder">Place Order</a> </li>
+		</ul>
+	</fieldset>
+</div>
 <hr/>
 
 </body>

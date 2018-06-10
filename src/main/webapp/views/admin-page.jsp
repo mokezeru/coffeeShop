@@ -6,42 +6,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Welcome Page</title>
+<link href="css/admin.css" rel="stylesheet" />
 </head>
 <body>
-	<h3>Admin Welcome ${person.firstName} </h3>
-	<a href="<c:url value="/logout" />"> Now logout </a>
-
+	<div class="welcome">
+		<h2 id="welcome">Admin Welcome ${person.firstName}</h2> 	
+	</div>
+	<p id="logout">
+		<a href="<c:url value="/logout" />"> Logout </a>
+	<p>
 	<hr />
-	<h2>Product</h2>
-	<h3>
-		<a href="createProduct">Create Product</a>
-	</h3>
-	<h3>
-		<a href="listProduct">List of Products</a>
-	</h3>
-	<!-- <h3>
-		<a href="delete-product">Delete Product</a>
-	</h3>
-	<h3>
-		<a href="update-product">Update Product</a>
-	</h3> -->
-	<hr />
-
-	<h2>Person</h2>
-	<h3>
-		<a href="createPerson">Create Person</a>
-	</h3>
-	<h3>
-		<a href="listPerson">List of Person</a>
-	</h3>
-	<hr />
-
-	<h2>Order</h2>
-	<h3>
-		<a href="listOrder">List of Orders</a>
-	</h3>
+	<div>
+	<fieldset>
+      <legend id="legend1">Product</legend>
+      	<ul>
+			<li><a href="createProduct">Create Product</a></li>
+			<li><a href="listProduct">List of Products</a></li>
+		</ul>
+	</fieldset>
+	</div>
 	
-	<hr />
+	<div>
+	<fieldset>
+      <legend id="legend2">Person</legend>
+      	<ul>
+			<li><a href="createPerson">Create Person</a></li>
+			<li><a href="listPerson">List of Person</a></li>
+		</ul>
+	</fieldset>
+	</div>
+
+	<div>
+	<fieldset>
+      <legend id="legend3">Order</legend>
+      	<ul>
+			<li><a href="listOrder">List of Orders</a></li>
+		</ul>	
+	</fieldset>
+	</div>
 
 </body>
 </html>

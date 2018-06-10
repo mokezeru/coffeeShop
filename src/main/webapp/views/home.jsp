@@ -9,14 +9,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link href="css/home.css" rel="stylesheet" />
 </head>
 <body>
-	You can choose any presentation framework that could be integrated with
-	Spring
+	<div id="header">
+		<h2>Welcome to Coffee Shop</h2> 	
+	</div>
+	
 	<p>
+		<a href="<c:url value="/secure" />"> Login </a>
 	<p>
-		The only user is "<b>super</b>" and the password is "<b>pw</b>"
-	<p>
-		<a href="<c:url value="/secure" />"> Go to Secure Area </a>
+	<div id = "center">
+	
+	</div>
+	
 </body>
 </html>

@@ -1,0 +1,18 @@
+
+h1{
+	text-align: center;
+}
+#logout{
+ 	height: 40px;
+ 	font-size:18px;
+  	text-align: right;
+  	background-color: gray;
+  	margin:0px;
+  }
+legend{
+  	color:#3B2F2F;
+  	font-weight:bold;
+  	font-size:24px;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+  }

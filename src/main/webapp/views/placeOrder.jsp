@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<a href="<c:url value="/logout" />"> Now logout </a>
+	<a href="<c:url value="/logout" />"> Logout </a>
 
 	<form action="placeOrder" method="post">
 		<table>

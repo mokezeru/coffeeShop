@@ -6,7 +6,7 @@
 <title>Add a Car</title>
 </head>
 <body>
-	<a href="<c:url value="/logout" />"> Now logout </a>
+	<a href="<c:url value="/logout" />"> Logout </a>
 
 	<form action="../product/${product.id}" method="post">
 	<table border="2pt">

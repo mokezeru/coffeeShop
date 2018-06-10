@@ -12,7 +12,7 @@
 	<h1>
 		<em>Please enter the Person details below</em>
 	</h1>
-	<a href="<c:url value="/logout" />"> Now logout </a>
+	<a href="<c:url value="/logout" />"> Logout </a>
 
 	<form:form action="createPerson" modelAttribute="personCreator" method="POST">
 		<table>

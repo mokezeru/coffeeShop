@@ -7,12 +7,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Add Product</title>
+<link href="css/createProduct.css" rel="stylesheet" />
 </head>
 <body>
-	<h1><em>Please enter the product details below</em></h1>
-	<a href="<c:url value="/logout" />"> Now logout </a>
+
+	<h1><em>Enter Product Details</em></h1>
+
+<p id="logout">
+	<a  href="<c:url value="/logout" />"> Logout </a>
+</p>
 
 	<form:form action="createProduct" modelAttribute="product" method="POST">
+	<div>
+	<fieldset>
+      <legend id="legend1">Product</legend>
 		<table>
 			<tr>
 				<td>Product Name:</td>
@@ -35,6 +43,9 @@
 				<td><form:errors path="productType" cssClass="error" /></td>
 			</tr>
 		</table>
+	</fieldset>
+	</div>
+	
 		<input type="submit" value="Add Product"/>
 	</form:form>
 </body>
